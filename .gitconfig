@@ -1,0 +1,30 @@
+[core]
+	excludesfile = /Users/willwywang-NB/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Wang Yang
+	email = khil.wang@gmail.com
+[alias]
+	st = status
+  ci = commit
+  br = branch
+  co = checkout
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	last2 = log -2 HEAD
+	last3 = log -3 HEAD
+	last4 = log -4 HEAD
+	last5 = log -5 HEAD
+	logmore = log --pretty=format:\"%h - %an, %ar : %cn , %cr : %s\"
+	logs = log --oneline --decorate
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+#[http]
+#  proxy = http://dev-proxy.oa.com:8080
