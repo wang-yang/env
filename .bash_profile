@@ -23,9 +23,6 @@ export CUDA_ROOT="$CUDA_HOME"
 
 . /Users/willwywang-NB/torch/install/bin/torch-activate
 
-#export http_proxy=http://dev-proxy.oa.com:8080
-#export https_proxy=http://dev-proxy.oa.com:8080
-
 [[ -s "/Users/dwightk/.rvm/scripts/rvm" ]] && source "/Users/dwightk/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 function parse_git_branch {
